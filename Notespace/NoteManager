@@ -1,0 +1,50 @@
+struct Note{
+		Int NoteId;
+String name;
+		String comments; //store the comments
+		String course;
+};
+
+//there should only be one NoteManager(this is the the user interface)
+
+Class NoteManager: friend NoteList
+{
+	Private:
+		String userName;
+		String email; //use for info tracking
+		String school;
+		
+		
+
+Protected:
+NoteManager();
+NoteList myList
+Public:
+Static NoteManager *instance();
+Note.NoteId addNote(const string &Note.name);
+Void removeNote(NoteId);
+Void renameNote(NoteId, const string &newNoteName);
+Void addComments(NoteId);
+
+};
+
+//Client
+NoteManager::instatnce()-> addNote(const string &noteName);
+
+
+
+
+
+//implementation of a linklist(data structure) in order to store the notes
+Class NoteList
+{
+Private:
+	Note *top
+	Int count;
+Public:
+Void addNoteote(note);
+Void removeNote(note);
+}
+
+
+
