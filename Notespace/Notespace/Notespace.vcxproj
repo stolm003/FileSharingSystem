@@ -158,6 +158,7 @@
     <ClCompile Include="main.cpp" />
     <ClCompile Include="Note.cpp" />
     <ClCompile Include="notespace.cpp" />
+    <ClCompile Include="Profile.cpp" />
     <ClCompile Include="User.cpp" />
   </ItemGroup>
   <ItemGroup>
@@ -203,6 +204,7 @@
   <ItemGroup>
     <ClInclude Include="GeneratedFiles\ui_notespace.h" />
     <ClInclude Include="Note.h" />
+    <ClInclude Include="Profile.h" />
     <ClInclude Include="User.h" />
   </ItemGroup>
   <ItemGroup>
