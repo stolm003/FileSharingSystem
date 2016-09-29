@@ -14,8 +14,8 @@ class Profile {
 		Profile();
 		void getProfile();
 		void encryptPass();
-		bool Login(const string username,string password);
-		bool checkUsername(const string username);
-		bool checkPass(string password);
+		bool Login(const std::string username,std::string password);
+		bool checkUsername(const std::string username);
+		bool checkPass(std::string password);
 };
 #endif
