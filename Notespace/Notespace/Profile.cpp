@@ -1,4 +1,4 @@
-#include <iostream>
+/*#include <iostream>
 #include "Profile.h"
 #include <string>
 
@@ -43,3 +43,5 @@ bool Profile::checkUsername(std::string username)
 
 }
 bool Profile::checkPass(std::string password)
+
+*/

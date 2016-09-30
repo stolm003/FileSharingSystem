@@ -1,4 +1,4 @@
-#ifndef PROFILE_H
+/*#ifndef PROFILE_H
 #define PROFILE_H
 class Profile {
 
@@ -18,4 +18,4 @@ class Profile {
 		bool checkUsername(const std::string username);
 		bool checkPass(std::string password);
 };
-#endif
+#endif*/
