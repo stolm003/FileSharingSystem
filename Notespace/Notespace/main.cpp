@@ -1,15 +1,15 @@
-#include "notespace.h"
-#include <QtCore/QCoreApplication>
-#include <QtWidgets/QApplication>
-#include <QDebug>
+//#include "notespace.h"
+#include <QApplication>
+#include <qpushbutton.h>
 
 int main(int argc, char *argv[])
 {
-	QCoreApplication a(argc, argv);
-	Notespace w;
-
-	qDebug() << "Hello World";
-
-	w.show();
-	return a.exec();
+	QApplication prog(argc, argv);
+	
+	QPushButton *button = new QPushButton("Quit program");
+	
+	QObject::connect(button, SIGNAL(clicked()), &prog, SLOT(quit()));
+	button->show();
+	
+	return prog.exec();
 }

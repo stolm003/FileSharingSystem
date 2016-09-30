@@ -29,19 +29,19 @@ void Note::printNoteList() {
 		oneNote current;
 		current = myList[i];
 		cout << current.noteName << endl;
-
+		
 	}
 }
 
 
 void Note::addNote(std::string note) {
-
+	
 	oneNote current;
 	current.noteName = note;
 	current.NoteId = indexCounter; //save the index counter as an ID
 	myList[indexCounter] = current;
 	indexCounter++;
-
+	
 	cout << "------------------------------------------------" << endl;
 	cout << "Name File to View: " << endl;
 	string fileName;
@@ -63,7 +63,7 @@ void Note::writeNote(string fileName, string noteName) {
 		this->linkFile(fileName, noteName);
 	}
 	else {
-		cout << "Good bye" << endl;
+		cout <<"Good bye" << endl;
 	}
 
 

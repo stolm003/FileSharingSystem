@@ -23,7 +23,7 @@ void User::createNote(string newNote) {
 
 User::User(string Name) {
 	userName = userName;
-
+	
 }
 
 void User::printNoteNames() {
