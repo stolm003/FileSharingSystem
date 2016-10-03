@@ -13,6 +13,7 @@
 #include <QtWidgets/QAction>
 #include <QtWidgets/QApplication>
 #include <QtWidgets/QButtonGroup>
+#include <QtWidgets/QHBoxLayout>
 #include <QtWidgets/QHeaderView>
 #include <QtWidgets/QLabel>
 #include <QtWidgets/QLineEdit>
@@ -31,9 +32,11 @@ public:
     QWidget *centralWidget;
     QTextEdit *preViewText;
     QLabel *label;
-    QPushButton *Search;
-    QLineEdit *lineEdit;
+    QWidget *layoutWidget;
+    QHBoxLayout *horizontalLayout_2;
     QLabel *label_2;
+    QLineEdit *lineEdit;
+    QPushButton *searchButton;
     QToolBar *mainToolBar;
     QStatusBar *statusBar;
 
@@ -46,27 +49,41 @@ public:
         centralWidget->setObjectName(QStringLiteral("centralWidget"));
         preViewText = new QTextEdit(centralWidget);
         preViewText->setObjectName(QStringLiteral("preViewText"));
-        preViewText->setGeometry(QRect(10, 40, 211, 231));
+        preViewText->setGeometry(QRect(10, 40, 231, 331));
         label = new QLabel(centralWidget);
         label->setObjectName(QStringLiteral("label"));
         label->setGeometry(QRect(90, 10, 91, 21));
         label->setMouseTracking(false);
-        Search = new QPushButton(centralWidget);
-        Search->setObjectName(QStringLiteral("Search"));
-        Search->setGeometry(QRect(390, 340, 93, 28));
-        Search->setLayoutDirection(Qt::LeftToRight);
-        Search->setAutoFillBackground(false);
-        lineEdit = new QLineEdit(centralWidget);
-        lineEdit->setObjectName(QStringLiteral("lineEdit"));
-        lineEdit->setGeometry(QRect(200, 340, 181, 31));
-        lineEdit->setLayoutDirection(Qt::LeftToRight);
-        lineEdit->setAutoFillBackground(false);
-        label_2 = new QLabel(centralWidget);
+        layoutWidget = new QWidget(centralWidget);
+        layoutWidget->setObjectName(QStringLiteral("layoutWidget"));
+        layoutWidget->setGeometry(QRect(250, 300, 361, 71));
+        horizontalLayout_2 = new QHBoxLayout(layoutWidget);
+        horizontalLayout_2->setSpacing(6);
+        horizontalLayout_2->setContentsMargins(11, 11, 11, 11);
+        horizontalLayout_2->setObjectName(QStringLiteral("horizontalLayout_2"));
+        horizontalLayout_2->setContentsMargins(0, 0, 0, 0);
+        label_2 = new QLabel(layoutWidget);
         label_2->setObjectName(QStringLiteral("label_2"));
-        label_2->setGeometry(QRect(54, 340, 151, 20));
         label_2->setLayoutDirection(Qt::LeftToRight);
         label_2->setAutoFillBackground(false);
         label_2->setAlignment(Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter);
+
+        horizontalLayout_2->addWidget(label_2);
+
+        lineEdit = new QLineEdit(layoutWidget);
+        lineEdit->setObjectName(QStringLiteral("lineEdit"));
+        lineEdit->setLayoutDirection(Qt::LeftToRight);
+        lineEdit->setAutoFillBackground(false);
+
+        horizontalLayout_2->addWidget(lineEdit);
+
+        searchButton = new QPushButton(layoutWidget);
+        searchButton->setObjectName(QStringLiteral("searchButton"));
+        searchButton->setLayoutDirection(Qt::LeftToRight);
+        searchButton->setAutoFillBackground(false);
+
+        horizontalLayout_2->addWidget(searchButton);
+
         NotespaceClass->setCentralWidget(centralWidget);
         mainToolBar = new QToolBar(NotespaceClass);
         mainToolBar->setObjectName(QStringLiteral("mainToolBar"));
@@ -84,8 +101,8 @@ public:
     {
         NotespaceClass->setWindowTitle(QApplication::translate("NotespaceClass", "Notespace", 0));
         label->setText(QApplication::translate("NotespaceClass", "Preview", 0));
-        Search->setText(QApplication::translate("NotespaceClass", "Search", 0));
         label_2->setText(QApplication::translate("NotespaceClass", "Search for file: ", 0));
+        searchButton->setText(QApplication::translate("NotespaceClass", "Search", 0));
     } // retranslateUi
 
 };

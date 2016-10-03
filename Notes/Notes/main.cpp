@@ -24,6 +24,7 @@ int main() {
 	myUser.createNote(noteName);
 	cin >> noteName;
 	myUser.createNote(noteName);
+	myUser.printNoteNames();
 
 	
 

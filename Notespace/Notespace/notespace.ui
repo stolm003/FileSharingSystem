@@ -40,7 +40,7 @@
      <string>Preview</string>
     </property>
    </widget>
-   <widget class="QWidget" name="">
+   <widget class="QWidget" name="layoutWidget">
     <property name="geometry">
      <rect>
       <x>250</x>
@@ -77,7 +77,7 @@
       </widget>
      </item>
      <item>
-      <widget class="QPushButton" name="Search">
+      <widget class="QPushButton" name="searchButton">
        <property name="layoutDirection">
         <enum>Qt::LeftToRight</enum>
        </property>

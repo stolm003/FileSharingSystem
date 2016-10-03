@@ -8,30 +8,33 @@ using namespace std;
 
 int main()
 {
-	int root = 25;
-	int floor = 0;
-	int cealing = 1000;
-	int half = 0;
-	int sqr = 0;
+	bool done = true;
+	int a = 0;
+	int b = 1000;
+	int c = -1;
+	int cOld;
+	int x = 9;
 
-	bool go = true;
-
-	while (go) {
-		half = (cealing - floor) / 2;
-		cout << half << endl;
-		if ((half * half) < root) {
-			cealing = half;
+	do {
+		cOld = c;
+		c = (a + b) / 2;
+		if ((c*c) == x)
+		{
+			done = false;
 		}
-		else if ((half*half) > root) {
-			floor = half;
+		else if ((c*c) < x)
+		{
+			a = c;
 		}
 		else {
-			go = false;
+			b = c;
 		}
-	}
+		
+	} while (done && c != cOld);
 
-	cout << "The square root is: " << half << endl;
+	cout << c << endl;
 
+	return 0;
 
 }
 

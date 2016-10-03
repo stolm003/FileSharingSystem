@@ -63,7 +63,7 @@ void Note::writeNote(string fileName, string noteName) {
 		this->linkFile(fileName, noteName);
 	}
 	else {
-		cout <<"Good bye" << endl;
+		cout <<"File not added" << endl;
 	}
 
 
