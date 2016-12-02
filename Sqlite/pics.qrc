@@ -1,0 +1,37 @@
+<RCC>
+    <qresource prefix="/pics">
+        <file>Icons/edit-file-icon.png</file>
+        <file>Icons/new-file-icon.png</file>
+        <file>Icons/search_files.png</file>
+        <file>Icons/Actions-color-picker-black-icon.png</file>
+    </qresource>
+    <qresource prefix="/">
+        <file>Icons/logout-icon.png</file>
+        <file>Icons/notes_mainLabel.png</file>
+        <file>Icons/Science-School-icon.png</file>
+        <file>Icons/user.png</file>
+        <file>Icons/Diploma-Certificate-icon.png</file>
+        <file>Notepad.qml</file>
+        <file>NotepadForm.ui.qml</file>
+        <file>Icons/Document-Write-icon.png</file>
+        <file>Icons/edit-file-icon.png</file>
+        <file>Icons/Apps-Actions-Cut-icon.png</file>
+        <file>Icons/Copy-icon.png</file>
+        <file>Icons/File-New-icon.png</file>
+        <file>Icons/Paste-icon.png</file>
+        <file>Icons/save-icon.png</file>
+        <file>Icons/File-Open-icon.png</file>
+        <file>Icons/Save-as-icon.png</file>
+        <file>../../../Downloads/LogoScopic(1).png</file>
+        <file>../../../Downloads/LogoScopic(2).png</file>
+        <file>../../../Downloads/LogoScopic(3).png</file>
+        <file>../../../Downloads/LogoScopic.png</file>
+        <file>Icons/noteSpaceLogo.png</file>
+        <file>../../../Downloads/SpotifySetup.exe</file>
+        <file>../../../Downloads/SourceTreeSetup_1.9.6.1.exe</file>
+        <file>Icons/text-bold-icon.png</file>
+        <file>Icons/text-italic-icon.png</file>
+        <file>Icons/text-underline-icon.png</file>
+        <file>Icons/font-colors-icon.png</file>
+    </qresource>
+</RCC>
